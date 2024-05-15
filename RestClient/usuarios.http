@@ -1,0 +1,45 @@
+GET http://localhost:3000/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZW1pbGlhbm9sZXphbWFAb3V0bG9vay5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJDZXNhciBFbWlsaWFubyBMZXphbWEgTMOzcGV6IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTcxNTczNDU3MSwiaXNzIjoiU2Vydmlkb3JGZWlKV1QiLCJhdWQiOiJDbGllbnRlc0ZlaUpXVCJ9.m24ezaDsFa7X72CYmnVXPvEL_5gcSZkpefKbeZkPItQ
+###
+
+GET http://localhost:3000/api/usuarios/emilianolezama@outlook.com
+
+###
+
+POST http://localhost:3000/api/auth
+Content-Type: application/json
+
+{
+    "email": "emilianolezama@outlook.com",
+    "password": "patito"
+}
+
+###
+
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZW1pbGlhbm9sZXphbWFAb3V0bG9vay5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJDZXNhciBFbWlsaWFubyBMZXphbWEgTMOzcGV6IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTcxNTczNDY1NiwiaXNzIjoiU2Vydmlkb3JGZWlKV1QiLCJhdWQiOiJDbGllbnRlc0ZlaUpXVCJ9.eIf-ssxdpfe46Q7XK7de21DBR1A-_Mi6SNIQxTgP_wY
+
+{
+    "email": "prueba2@uv.mx",
+    "password": "patito",
+    "nombre": "Un nuevo usuario pato",
+    "rol": "Administrador"
+}
+
+###
+
+PUT http://localhost:3000/api/usuarios/prueba@uv.mx
+Content-Type: application/json
+
+{
+    "email": "prueba@uv.mx",
+    "password": "patito",
+    "nombre": "Usuario pato editado",
+    "rol": "Usuario"
+}
+
+###
+
+DELETE http://localhost:3000/api/usuarios/prueba@uv.mx

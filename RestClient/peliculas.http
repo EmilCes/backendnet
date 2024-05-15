@@ -14,10 +14,13 @@ POST http://localhost:3000/api/peliculas
 Content-Type: application/json
 
 {
-    "titulo": "Película de prueba",
-    "sinopsis": "Sinopsis de prueba.",
-    "anio": 2024
+    "titulo": "Noche de juegos",
+    "sinopsis": "Una pareja participa en una noche de juegos que se sale de control.",
+    "anio": 2018
 }
+
+
+
 
 ###
 
